@@ -1,0 +1,10 @@
+<div class="list-group" id="list-tab" role="tablist">
+  <a appBackgroundColor href="#" 
+  class="list-group-item list-group-item-action friends-list-person-link float-left" role="tab" 
+  (click)="onSelected()">
+    <img [src]="friend.img" class="friends-list-person-image" alt="{{ friend.name }}">
+    <span class="pl-2 align-middle friends-list-person">{{ friend.name }}</span>
+    <i class="fas fa-eye icon eye-icon"></i>
+    <span class="online-icon"></span>
+  </a>
+</div>

@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="friends-list-page">
+    <div class="friends-list-header">
+      <div class="friends-list-search-box">
+        <div class="input-group">
+          <input [(ngModel)]='name' class="form-control form-control-lg mr-3 w-75" type="text" placeholder="Search..." aria-label="Search">
+          <i class="fas fa-search icon search-icon" aria-hidden="true"></i>
+        </div>
+      </div>
+      <div class="friends-list-choice-btns">
+        <a href="#" class="recentBtn btn btn-light">Recent Chats</a>
+        <a href="#" class="membersBtn btn btn-primary">All Members</a>
+      </div>
+      <div class="friends-list">
+        <div class="list-group">
+          <app-friend 
+          [friend]="friend"
+          *ngFor="let friend of friends | filterFriend: name"
+          (click)="openChat(friend)"></app-friend>
+        </div>
+      </div>
+    </div>
+    <div class="friends-list-groups">
+      <h2 class="heading-secondary">Groups</h2>
+      <a class="friends-list-new-group" href="#">
+        <i class="fas fa-user-friends icon group-icon"></i>
+        <span class="align-middle">New Group</span>
+      </a>
+    </div>
+  </div>
+</div>

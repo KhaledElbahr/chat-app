@@ -1,0 +1,6 @@
+<div class="row clearfix">
+  <app-friends-list (OpenChat)="openChat()"></app-friends-list>
+
+  <app-friend-details *ngIf="toggleChat"
+  [friend]="selectedFriend" (closeChat)="closeChat()"></app-friend-details>
+</div>

@@ -1,0 +1,52 @@
+<div class="chat-page">
+  <div class="chat-header">
+    <a href="#" class="header-person-link">
+      <img [src]="friend.img" alt="{{friend.name}}" class="header-person-img">
+      <span class="header-container align-middle">                      
+        <span class="header-person-name">{{friend.name}}</span>
+        <span class="header-last-seen">Last seen at 3 AM</span>
+      </span>
+    </a>
+    <span class="icons-container float-right">
+      <a href="#" class="settings-icon dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-cog icon"></i>
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#"><i class="fas fa-volume-mute d-inline-block mr-2"></i>Mute</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-ban d-inline-block mr-2"></i>Block</a>
+        <a class="dropdown-item" href="#"><i class="fas fa-trash d-inline-block mr-2"></i>Delete</a>
+      </div>
+      <i (click)="onClose()" class="fas fa-times icon close-icon"></i>
+    </span>
+  </div>
+  <div class="chat-body">
+    <div 
+    *ngFor="let msg of friend.msg"
+    class="message my-message float-left">
+      {{ msg }}
+    </div>
+  </div>
+
+  <div class="chat-message-write">
+    <div class="chat-write-section">
+      <input
+        [(ngModel)]="msgInput"
+        #MsgInput
+        type="text" 
+        class="chat-message-input" 
+        placeholder="Write a message..."
+      >
+      <button  
+        class="btn btn-primary" 
+        type="button" 
+        (click)="onAddMsg()"
+        [disabled]="!msgInput"
+        class="send-btn">
+          <i class="fas fa-paper-plane icon send-icon"></i>
+      </button>
+    </div>
+  </div>
+</div>
+<div class="chat-page-button">
+  <span class="person-name">Ahmed Mohammed</span>
+</div>

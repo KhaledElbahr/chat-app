@@ -1,0 +1,98 @@
+.friends-list-page {
+    width: 30rem;
+    height: 95vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: var(--color-white);
+    font-size: 1.6rem;
+    overflow: auto;
+  }
+  
+  .friends-list {
+    padding: 0 1.5rem;
+    height: 65vh;
+    overflow: auto;
+    border-bottom: 1px solid var(--color-light-grey-2);
+  }
+  
+  .friends-list-header .form-control {
+    border: none;
+    padding: 2rem 2.5rem;
+    padding-left: 5rem;
+    border-bottom: 1px solid var(--color-light-grey-2);
+    position: relative;
+    width: 100% !important;
+    margin-right: 0 !important;
+    outline: none !important;
+    color: var(--color-dark-grey-1);
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-light-grey-2);
+  }
+  
+  .friends-list-choice-btns {
+    padding: 3rem 4rem;
+  }
+  
+  .recentBtn,
+  .membersBtn {
+    display: inline-block;
+    border-radius: 15px;
+    padding: .5rem 1.7rem;
+    outline: none;
+  }
+  
+  .recentBtn {
+    background: var(--color-white);
+    border-color: var(--color-light-grey-2);
+    color: var(--color-light-grey-2);
+  }
+  
+  .membersBtn {
+    margin-left: 1rem;
+    background: var(--main-color);
+  }
+  
+  .friends-list-groups {
+    padding: 1rem 1.5rem;
+  }
+  
+  .friends-list-groups .heading-secondary {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  
+  .group-icon{
+    border-radius: 50%;
+    font-size: 1.6rem;
+    padding: 2rem;
+    color: var(--color-white);
+    background: var(--color-light-grey-2);
+  }
+  
+  .friends-list-new-group:link,
+  .friends-list-new-group:visited {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-black);
+  }
+  
+  .friends-list-new-group:active,
+  .friends-list-new-group:hover {
+    text-decoration: none;
+    color: var(--color-black);
+  }
+  
+  .friends-list-new-group span {
+    display: inline-block;
+    padding-left: 1rem;
+  }
+  

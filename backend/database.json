@@ -1,0 +1,64 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "khaled Mohamed",
+      "img": "https://www.w3schools.com/w3images/avatar2.png",
+      "msg": [
+        "Hi, khaled",
+        "how are u?",
+        "hi",
+        "hello",
+        "hi",
+        "hello",
+        "khaled"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Mohamed Ahmed",
+      "img": "https://www.w3schools.com/w3images/avatar3.png",
+      "msg": [
+        "Hi, Mohamed",
+        "how are u?",
+        "hi"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ahmed Mohamed",
+      "img": "https://www.w3schools.com/w3images/avatar4.png",
+      "msg": [
+        "Hi, Ahmed",
+        "how are u?"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hassan Ali",
+      "img": "https://www.w3schools.com/w3images/avatar5.png",
+      "msg": [
+        "Hi, Hassan",
+        "how are u?"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Tamer Mohamed",
+      "img": "https://www.w3schools.com/w3images/avatar6.png",
+      "msg": [
+        "Hi, Tamer",
+        "how are u?"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Ali Ahmed",
+      "img": "https://www.w3schools.com/w3images/avatar2.png",
+      "msg": [
+        "Hi, Ali",
+        "how are u?"
+      ]
+    }
+  ]
+}
