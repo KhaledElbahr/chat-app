@@ -1,4 +1,3 @@
-import { Observable } from 'rxjs';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Friend } from 'src/app/friend.model';
 import { FriendService } from 'src/app/services/friend.service';
@@ -16,10 +15,7 @@ export class FriendsListComponent {
   constructor(private friendService: FriendService) {
     this.friendService.GetFriends()
     .subscribe(
-      res => {
-        this.friends = res;
-        console.log(res);
-      }
+      res => this.friends = res
     );
   }
 

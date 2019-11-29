@@ -9,7 +9,7 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class FriendService {
 
-  baseurl = 'http://localhost:2000';
+  baseurl = 'http://localhost:3000';
 
   friendSelected = new EventEmitter<Friend>();
 
